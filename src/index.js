@@ -31,7 +31,7 @@ function startClrSwitch() {
     refs.startBtn.disabled = true;
         
     intervalId = setInterval(() => {
-        colorToSet = colors[randomIntegerFromInterval(1, numberOfColors)];
+        colorToSet = colors[randomIntegerFromInterval(0, numberOfColors - 1)];
         refs.body.style.backgroundColor = colorToSet;
     }, 1000, colors, colorToSet, numberOfColors);
 };
