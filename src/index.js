@@ -33,7 +33,7 @@ function startClrSwitch() {
     intervalId = setInterval(() => {
         colorToSet = colors[randomIntegerFromInterval(1, numberOfColors)];
         refs.body.style.backgroundColor = colorToSet;
-    }, 250, colors, colorToSet, numberOfColors);
+    }, 1000, colors, colorToSet, numberOfColors);
 };
 
 function stopClrSwitch() {
